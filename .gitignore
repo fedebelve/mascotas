@@ -1,3 +1,5 @@
 .idea/*
 db.sqlite3
 venv/*
+mascota/__pycache__/*
+adopcion/__pycache__/*.pyc
