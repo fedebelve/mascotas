@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Title {% endblock %}</title>
+</head>
+<body>
+{%  include "base/barra.html" %}
+
+{% block content %}
+    <h4>Este es el bloque del content base</h4>
+{% endblock %}
+
+</body>
+</html>

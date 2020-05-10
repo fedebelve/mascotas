@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <div class="container">
+        <h2>Eliminar el registro de {{ object.persona.nombre }}</h2> </br></br>
+        <form method="post">{% csrf_token %}
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger btn-lg">Si, eliminar</button>
+                <a href="{%  url 'adopcion:solicitud_listar'  %}" class="btn btn-lg">Cancelar</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}

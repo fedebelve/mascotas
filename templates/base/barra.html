@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    {%  load bootstrap4 %}
+    {%  bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <script src=" {% static 'js/bootstrap.min.js' %} "></script>
+    <script src=" {% static 'js/main.js' %} "></script>
+</head>
+<body>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="/home/">Mascotas</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{%  url 'mascota:mascota_listar'  %}">Listar Mascotas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'mascota:mascota_crear' %}">Nueva Mascota</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'adopcion:solicitud_listar' %}">Listar Solicitudes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'adopcion:solicitud_crear' %}">Nueva Solicitud</a>
+      </li>
+    </ul>
+</div>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+  </div>
+</nav>
+
+</body>
+</html>
