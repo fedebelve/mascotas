@@ -27,7 +27,7 @@ SECRET_KEY = 'tqqzld6pr#c&l^vsx#tp8(z)2n!@v&1s=nc+6@raxz=0pe_o%9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -81,8 +81,14 @@ WSGI_APPLICATION = 'mascotas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME': 'mascotas',
+         'USER': 'postgres',
+         'PASSWORD': 'postgres',
+         'HOST': 'localhost',
+         'DATABASE': '5432',
     }
 }
 
