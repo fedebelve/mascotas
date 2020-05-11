@@ -4,3 +4,4 @@ venv/*
 mascota/__pycache__/*
 mascotas/__pycache__/*
 adopcion/__pycache__/*
+staticfiles/*
