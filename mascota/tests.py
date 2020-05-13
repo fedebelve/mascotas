@@ -31,7 +31,7 @@ class MascotaTestCase(TestCase):
 
     def test_editMascota(self):
          response = self.c.get('/mascota/editar/1')
-         self.assertEqual(response.status_code, 300)
+         self.assertEqual(response.status_code, 200)
 
 
 
