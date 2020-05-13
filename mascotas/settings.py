@@ -92,9 +92,6 @@ DATABASES = {
          'PASSWORD': 'postgres',
          'HOST': 'localhost',
          'DATABASE': '5432',
-         'TEST': {
-             'NAME': 'd4f18o0a5noo94'
-         }
     }
 }
 
@@ -143,12 +140,3 @@ LOGIN_REDIRECT_URL = reverse_lazy('adopcion:solicitud_listar')
 
 django_heroku.settings(locals())
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'] .update(db_from_env)
-#DATABASE_URL='postgres://wbrtxcyrqbfbue:a399badc27d8297bedd7d8f75a74ed70d15fa0b33d916e05efa4428ec479c248@ec2-34-198-243-120.compute-1.amazonaws.com:5432/d4f18o0a5noo94'
-
-
-#TEST_RUNNER = 'python.path.to.test_suite_runner.HerokuTestSuiteRunner'
-# TEST_DATABASES = {
-#     'default': dj_database_url.config(env='TEST_DATABASE_URL')
-# }
