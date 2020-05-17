@@ -2,7 +2,7 @@
   "environments": {
     "test": {
       "scripts": {
-        "test": "test"
+        "test": "manage.py test"
       }
     }
   }
