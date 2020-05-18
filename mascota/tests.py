@@ -15,7 +15,7 @@ class MascotaTestCase(TestCase):
         self.c = Client()
         persona1 = Persona.objects.create(nombre='fede', apellido='belve', edad='18', telefono='123', email='fede@gmail.com', domicilio='asdfsadf')
         person2 = MagicMock()
-        vacuna1 = Vacuna.objects.create(nombre='Rabia')
+        vacuna1 = Vacuna.objects.create(nombre='Rabiaa')
         vacuna2 = Vacuna.objects.create(nombre='Otra')
         vacuna3 = Vacuna.objects.create(nombre='Otra Mas')
         self.mascota = Mascota.objects.create(codigo=1, nombre='pepe', sexo='Masc', edad_aproximada='28', fecha_rescate='2001-01-01', persona=persona1)
