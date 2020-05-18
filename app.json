@@ -2,7 +2,7 @@
   "environments": {
     "test": {
       "addons": [
-        "heroku-postgresql:in-dyno"
+        "heroku-postgresql:hobby-dev"
       ],
       "scripts": {
         "test": "python manage.py test"
