@@ -140,3 +140,4 @@ LOGIN_REDIRECT_URL = reverse_lazy('adopcion:solicitud_listar')
 
 django_heroku.settings(locals())
 
+TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
