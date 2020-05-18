@@ -25,24 +25,24 @@ class MascotaTestCase(TestCase):
     def test_mascota_vacunas(self):
         self.assertEqual(self.mascota.vacuna.count(),3)
 
-    def test_listMascota(self):
-        response = self.c.get('/mascota/listar/')
-        self.assertEqual(response.status_code, 200)
-
-    def test_editMascota(self):
-         response = self.c.get('/mascota/editar/1')
-         self.assertEqual(response.status_code, 200)
-
-
-
-def setup_view(view, request, *args, **kwargs):
-    view.request = request
-    view.args = args
-    view.kawrgs = kwargs
-    return view
-
-def ViewTestCase(TestCase):
-    c = Client()
-    request = c.get('/mascota/listar/')
-    v = setup_view(MascotaList, request)
-
+#     def test_listMascota(self):
+#         response = self.c.get('/mascota/listar/')
+#         self.assertEqual(response.status_code, 200)
+#
+#     def test_editMascota(self):
+#          response = self.c.get('/mascota/editar/1')
+#          self.assertEqual(response.status_code, 200)
+#
+#
+#
+# def setup_view(view, request, *args, **kwargs):
+#     view.request = request
+#     view.args = args
+#     view.kawrgs = kwargs
+#     return view
+#
+# def ViewTestCase(TestCase):
+#     c = Client()
+#     request = c.get('/mascota/listar/')
+#     v = setup_view(MascotaList, request)
+#
