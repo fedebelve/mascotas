@@ -3,7 +3,8 @@
     "test": {
       "scripts": {
         "test": {
-          "addons": ["heroku-postgresql:in-dyno"]
+          "addons": ["heroku-postgresql:in-dyno"],
+          "test": "python manage.py test"
         }
       }
     }
