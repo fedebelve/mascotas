@@ -2,7 +2,9 @@
   "environments": {
     "test": {
       "scripts": {
-        "test": "python manage.py test"
+        "test": {
+          "addons": ["heroku-postgresql:in-dyno"]
+        }
       }
     }
   }
