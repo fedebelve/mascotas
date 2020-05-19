@@ -1,9 +1,14 @@
 .idea/*
 db.sqlite3
 venv/*
-mascota/__pycache__/*
-mascotas/__pycache__/*
-adopcion/__pycache__/*
+mascota/migrations/__pycache__/
+mascotas/migrations/__pycache__/
+adopcion/migrations/__pycache__/
+
+mascota/__pycache__/
+mascotas/__pycache__/
+adopcion/__pycache__/
+
 staticfiles/*
 
 Dockerfile
