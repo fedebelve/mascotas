@@ -5,3 +5,7 @@ mascota/__pycache__/*
 mascotas/__pycache__/*
 adopcion/__pycache__/*
 staticfiles/*
+
+Dockerfile
+entrypoint.sh
+docker-compose.yml
