@@ -23,7 +23,7 @@ class MascotaTestCase(TestCase):
 
 
     def test_mascota_vacunas(self):
-        self.assertEqual(self.mascota.vacuna.count(),3)
+        self.assertEqual(self.mascota.vacuna.count(),2)
 
 #     def test_listMascota(self):
 #         response = self.c.get('/mascota/listar/')
