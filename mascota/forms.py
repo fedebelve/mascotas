@@ -14,7 +14,8 @@ class MascotaForm(forms.ModelForm):
             'fecha_rescate',
             'sexo',
             'persona',
-            'vacuna'
+            'vacuna',
+            'tipo_mascota'
         ]
         labels = {
             'codigo': 'Codigo',
@@ -23,7 +24,8 @@ class MascotaForm(forms.ModelForm):
             'fecha_rescate': 'Fecha Rescate',
             'sexo': 'Sexo',
             'persona': 'Persona',
-            'vacuna': 'Vacuna'
+            'vacuna': 'Vacuna',
+            'tipo_mascota': 'Tipo Mascota'
         }
 
         widgets = {
@@ -34,5 +36,6 @@ class MascotaForm(forms.ModelForm):
             'sexo': forms.TextInput(attrs={'class': 'form-control'}),
             'persona': forms.Select(attrs={'class': 'form-control'}),
             'vacuna': forms.CheckboxSelectMultiple(),
+            'tipo_mascota':forms.TextInput(attrs={'class': 'form-control'}),
         }
 
