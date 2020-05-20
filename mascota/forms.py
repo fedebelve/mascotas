@@ -25,7 +25,7 @@ class MascotaForm(forms.ModelForm):
             'sexo': 'Sexo',
             'persona': 'Persona',
             'vacuna': 'Vacuna',
-            'tipo_mascota': 'Tipo Mascota'
+            'tipo_mascota': 'Tipo Mascotaaaaa'
         }
 
         widgets = {
