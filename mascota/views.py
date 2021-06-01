@@ -4,8 +4,8 @@ from django.http import HttpResponse
 from django.urls import reverse_lazy
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 
-from mascota.forms import MascotaForm
-from mascota.models import Mascota
+from mascota.forms import MascotaForm, MascotaForm2
+from mascota.models import Mascota, Mascotas
 
 
 # def mascota_add(request):
@@ -60,6 +60,13 @@ class MascotaCreate(CreateView):
     form_class = MascotaForm
     template_name = 'mascota/mascotaForm.html'
     success_url = reverse_lazy('mascota:mascota_listar')
+
+class MascotasCreate(CreateView):
+    model = Mascotas
+    form_class = MascotaForm2
+    template_name = 'mascota/mascotaForm.html'
+    success_url = reverse_lazy('mascota:mascota_listar')
+
 
 
 class MascotaUpdate(UpdateView):

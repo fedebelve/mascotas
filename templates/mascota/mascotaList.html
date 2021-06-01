@@ -19,7 +19,7 @@
         {% if object_list %}
             {% for mascota in object_list %}
             <tr>
-                <td>{{ mascota.codigo }}</td>
+                <td name="codigo">{{ mascota.codigo }}</td>
                 <td>{{ mascota.nombre }}</td>
                 <td>{{ mascota.sexo }}</td>
                 <td>{{ mascota.edad_aproximada }}</td>

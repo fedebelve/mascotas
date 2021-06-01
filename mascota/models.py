@@ -22,3 +22,14 @@ class Mascota(models.Model):
 
     def __str__(self):
         return '{}'.format(self.nombre)
+
+
+class Mascotas(models.Model):
+    codigo = models.IntegerField(primary_key=True)
+    nombre = models.CharField(max_length=50)
+    sexo = models.CharField(max_length=10)
+    edad_aproximada = models.IntegerField()
+    fecha_rescate = models.DateField()
+
+    def __str__(self):
+        return '{}'.format(self.nombre)

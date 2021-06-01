@@ -4,7 +4,7 @@ from mascota.views import MascotaList, MascotaCreate, MascotaUpdate, MascotaDele
 
 urlpatterns = [
 #    path('home/', home, name='home'),
-    path('nuevo/', MascotaCreate.as_view(), name='mascota_crear'),
+    path('nueva/', MascotaCreate.as_view(), name='mascota_crear'),
     path('listar/', MascotaList.as_view(), name='mascota_listar'),
     path('editar/<pk>', MascotaUpdate.as_view(), name='mascota_editar'),
     path('eliminar/<pk>', MascotaDelete.as_view(), name='mascota_eliminar'),
